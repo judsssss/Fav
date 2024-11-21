@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Adorable World of Pandas</title>
+  <link rel="shortcut icon" type= "x-icon" href="panda/logo11.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
+    <a class="logo" href="#">
+        <img src="panda/logo11.png" alt="" width="70px">
+    </a>
     <h1>The Adorable World of Pandas</h1>
+
+    
+    <div class="buttonS">
+      <a class="Register" href= "#">Register</a>
+      <a class= "SignIn" id="signInButton" href= "#">Sign In</a>
+  </div>
   </header>
 
   <main>
@@ -47,6 +57,12 @@
       </ul>
       </div>
 
+            <h2>Panda Everyone: </h2>
+        <div class="video">
+        <iframe class="crazypanda" src="https://www.youtube.com/embed/D7xWXk5T3-g?si=-ElUMtsphYrmANT_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+
         <section>
         <h2>Why Pandas Matter</h2>
         <p>Beyond their cuteness, pandas play a vital role in their ecosystem. By consuming bamboo, they help control its overgrowth, ensuring a balanced forest environment. Their presence also supports the survival of other species within their habitat.
@@ -62,5 +78,28 @@
   <footer>
     <p>© 2024 Panda Enthusiasts. All rights reserved.</p>
   </footer>
+
+<!--loginForm-->
+<div id="loginModal" class="modal hidden">
+    <div class="container">
+        <form action="" class="form">
+            <h1>LOGIN</h1>
+            <input type="text" name="username" id="username" class="box" placeholder="Enter Username" required />
+            <input type="password" name="Password" id="password" class="box" placeholder="Enter Password" required />
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <input type="submit" value="LOGIN" id="submit">
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register Here!</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+  
+
+<script src="script.js"></script>
 </body>
 </html>
